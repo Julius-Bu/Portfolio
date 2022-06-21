@@ -11,10 +11,10 @@
 
 	<!-- navigation bar-->
 	<nav id="navig">
-		<a onClick="mybody.src = 'home.htm', border-bottom='5px solid white', background='#fff', color= '#666'">Home</a>
-		<a onClick="mybody.src = 'about.htm'">About me</a>
-		<a onClick="mybody.src = 'courses.htm'">Courses</a>
-		<a onClick="mybody.src = 'findmore.htm'">Inquiries</a>
+		<a id="myButton" class="topNav" onClick="$('#navig').load(window.location.href + ' #navig'); navbutton('active', 'home.htm', 'myButton')">Home</a>
+		<a id="myButton2" class="topNav" onClick="navbutton('active', 'about.htm', 'myButton2')">About me</a>
+		<a class="topNav" onClick="mybody.src = 'courses.htm'">Courses</a>
+		<a class="topNav" onClick="mybody.src = 'findmore.htm'">Inquiries</a>
 		
 	</nav>
 
@@ -61,6 +61,40 @@
 		<br>
 		<h4>&copy; Julius BUWEMBO. All rights reserved.</h4>
 	</div>
+
+	<script>
+		var a;
+		var b;
+		var i;
+		var old;
+		function navbutton(a, b, i) {
+			
+			if(a="active"){
+				
+				switch (i) {
+					case "myButton":
+						document.getElementById(i).style.background = "#fff";
+						document.getElementById(i).style.color = "#666";
+						document.getElementById("mybody").src = b;
+						break;
+					case "myButton2":
+						document.getElementById(i).style.background = "#fff";
+						document.getElementById(i).style.color = "#666";
+						document.getElementById("mybody").src = b;
+						break;
+				
+					default:
+						document.getElementById(i).style.background ="linear-gradient(#098899, #098899)";
+						break;
+				}
+				
+					
+				
+				
+			}
+			
+		}
+	</script>
 
 </body>
 </html>
