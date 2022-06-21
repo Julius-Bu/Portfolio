@@ -12,7 +12,7 @@ nav{
 	box-shadow: 5px 5px 5px #555;
 }
 
-nav a{
+.topNav{
 	background:linear-gradient(#098899, #098899);
 	padding: 10px;
 	padding-left: 2%;
@@ -42,6 +42,12 @@ h2{
 	padding: 10px;
 	font-size: 28px;
 	border-bottom: 2px solid #bbb;
+}
+
+.active{
+	border-bottom: 5px solid white; 
+	background: #fff; 
+	color: #666;
 }
 .profile{
 	color: #098899;
