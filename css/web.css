@@ -231,7 +231,7 @@ marquee{
 	position: absolute;
 	left: 80%;
 	top: 50px;
-	z-index: 9;
+	z-index: 1;
 	width: 20%;
 	height: 340px;
 	text-align: right;
